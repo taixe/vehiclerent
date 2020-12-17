@@ -1,203 +1,81 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-    <title>OGIS - Thuê Xe Máy, Ô Tô</title>
-    <!-- GLOBAL CSS -->
-    <link rel="stylesheet" type="text/css" href="./quyche_files/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./quyche_files/font-awesome.min.css">
-   
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-    <link rel="stylesheet" type="text/css" href="http://alodoctor.com.vn:3393/front/css/style.css">
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+ .line{
+width: 112px;
+height: 47px;
+border-bottom: 1px solid black;
+position: absolute;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
 </head>
-<body data-gr-c-s-loaded="true">
-<!-- Webview phụ phí -->
-<div id="content" class="content-without-banner">
-    <!-- PAGE CONTENT -->
+<body>
 
-
-    <article>
-        <!--<div class="boxtag" style="padding: 0 !important;">
-            <img alt="" src="" style="max-width: 100%; height: auto">
-
-        </div>-->
-<!--        <div class="writer">-->
-<!--            <div>-->
-<!--                <label><i class="fa fa-edit"></i> Admin</label>-->
-<!--                <label style="border-left: 1px solid #c0c0c0; padding-left: 5px"><i class="fa fa-calendar"></i> 4 tháng</label>-->
-                <!--<label style="border-left: 1px solid #c0c0c0; padding-left: 5px"><i class="fa fa-eye"></i> 3</label>-->
-<!--            </div>-->
-<!--        </div>-->
-<h1 class="title" style="text-align: center;">Ch&iacute;nh s&aacute;ch &amp; quy định</h1>
-<div class="content-container">
-<h2 id="responsibility">1. Tr&aacute;ch nhiệm của kh&aacute;ch thu&ecirc; xe v&agrave; chủ xe trong giao dịch cho thu&ecirc; xe tự l&aacute;i</h2>
-<p>Mục đ&iacute;ch l&acirc;u d&agrave;i của OGIS l&agrave; hướng đến việc x&acirc;y dựng cộng đồng chia sẻ xe &ocirc; t&ocirc; văn minh v&agrave; uy t&iacute;n tại Việt Nam. V&igrave; thế, để đảm bảo c&aacute;c giao dịch thu&ecirc; xe trong cộng đồng được diễn ra một c&aacute;ch thuận lợi v&agrave; th&agrave;nh c&ocirc;ng tốt đẹp th&igrave; việc quy định tr&aacute;ch nhiệm của c&aacute;c b&ecirc;n trong tu&acirc;n thủ c&aacute;c ch&iacute;nh s&aacute;ch của OGIS v&agrave; c&aacute;c điều khoản cam kết l&agrave; rất quan trọng.</p>
-<h3>A. Tr&aacute;ch nhiệm của chủ xe</h3>
-<p>- Giao xe v&agrave; to&agrave;n bộ giấy tờ li&ecirc;n quan đến xe đ&uacute;ng thời gian v&agrave; trong t&igrave;nh trạng an to&agrave;n, vệ sinh sạch sẽ nhằm đảm bảo chất lượng dịch vụ.</p>
-<p>- C&aacute;c giấy tờ xe li&ecirc;n quan bao gồm: giấy đăng k&yacute; xe (bản photo c&ocirc;ng chứng), giấy kiểm định, giấy bảo hiểm xe (bản photo c&ocirc;ng chứng hoặc bản gốc).</p>
-<p>- Chịu tr&aacute;ch nhiệm ph&aacute;p l&yacute; về nguồn gốc v&agrave; quyền sở hữu của xe.</p>
-<h3>B. Tr&aacute;ch nhiệm kh&aacute;ch thu&ecirc; xe</h3>
-<p>- Kiểm tra kỹ xe trước khi nhận v&agrave; trước khi ho&agrave;n trả xe. K&iacute; x&aacute;c nhận bi&ecirc;n bản b&agrave;n giao về t&igrave;nh trạng xe khi nhận v&agrave; khi ho&agrave;n trả.</p>
-<p>- Thanh to&aacute;n đầy đủ tiền thu&ecirc; xe cho Chủ xe khi nhận xe.</p>
-<p>- Xuất tr&igrave;nh đầy đủ c&aacute;c giấy tờ li&ecirc;n quan cho chủ xe: CMND, GPLX, Hộ khẩu hoặc KT3. Đặt cọc Hộ khẩu/KT3, tiền mặt (15 triệu đồng hoặc t&ugrave;y thỏa thuận với chủ xe) hoặc t&agrave;i sản c&oacute; gi&aacute; trị tương đương (xe m&aacute;y v&agrave; c&agrave; vẹt xe) trước khi nhận xe.</p>
-<p>- Tu&acirc;n thủ quy định v&agrave; thời gian trả xe như 2 b&ecirc;n đ&atilde; thỏa thuận.</p>
-<p>- Chịu tr&aacute;ch nhiệm đền b&ugrave; mọi thất tho&aacute;t về phụ t&ugrave;ng, phụ kiện của xe, đền b&ugrave; 100% theo gi&aacute; phụ t&ugrave;ng ch&iacute;nh h&atilde;ng nếu ph&aacute;t hiện phụ t&ugrave;ng bị tr&aacute;o đổi, chịu 100% chi ph&iacute; sửa chữa xe nếu c&oacute; xảy ra hỏng h&oacute;c t&ugrave;y theo mức độ hư tổn của xe, chi ph&iacute; c&aacute;c ng&agrave;y xe nghỉ kh&ocirc;ng chạy được do lỗi của kh&aacute;ch thu&ecirc; xe (gi&aacute; được t&iacute;nh bằng gi&aacute; thu&ecirc; trong hợp đồng) v&agrave; c&aacute;c khoản ph&iacute; vệ sinh xe nếu c&oacute;.</p>
-<h3>C. Tr&aacute;ch nhiệm v&agrave; khuyến nghị của OGIS</h3>
-<p>- OGIS khuyến nghị Chủ xe v&agrave; Kh&aacute;ch thu&ecirc; xe cần thực hiện việc giao kết bằng văn bản "Hợp đồng cho thu&ecirc; xe tự l&aacute;i" cũng như k&iacute; kết "Bi&ecirc;n bản b&agrave;n giao xe" nhằm đảm bảo quyền lợi của cả 2 b&ecirc;n trong trường hợp ph&aacute;t sinh tranh chấp.</p>
-<p>- Chủ xe c&oacute; thể tham khảo sử dụng mẫu "Hợp đồng thu&ecirc; xe tự l&aacute;i" v&agrave; "Bi&ecirc;n bản b&agrave;n giao xe" của OGIS (vui l&ograve;ng cung cấp email cho bộ phận CSKH của OGIS để nhận th&ocirc;ng tin).</p>
-<p>- Chủ xe v&agrave; kh&aacute;ch thu&ecirc; xe tự chịu to&agrave;n bộ tr&aacute;ch nhiệm d&acirc;n sự v&agrave; h&igrave;nh sự nếu c&oacute; ph&aacute;t sinh tranh chấp giữa hai b&ecirc;n nếu c&oacute;. OGIS chỉ đ&oacute;ng vai tr&ograve; hỗ trợ hai b&ecirc;n d&agrave;n xếp c&aacute;c vấn đề một c&aacute;ch tốt đẹp nhất, tu&acirc;n theo c&aacute;c điều khoản, ch&iacute;nh s&aacute;ch v&agrave; quy chế hoạt động cả hai b&ecirc;n đ&atilde; cam kết với OGIS.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="mioto-responsibility">2. Tr&aacute;ch nhiệm của OGIS trong c&aacute;c trường hợp xảy ra sự cố ngo&agrave;i &yacute; muốn như xe bị cầm cố, thế chấp, bị bắt giữ khi được d&ugrave;ng để vận chuyển ma t&uacute;y, h&agrave;ng quốc cấm, hoặc g&acirc;y tai nạn</h2>
-<p>Hiện tại, OGIS chỉ đ&oacute;ng vai tr&ograve; l&agrave; s&agrave;n giao dịch thương mại điện tử về cho thu&ecirc; xe &ocirc; t&ocirc;, l&agrave; cầu nối giữa c&aacute;c chủ xe v&agrave; kh&aacute;ch h&agrave;ng c&oacute; nhu cầu thu&ecirc; xe. Về cơ bản, mọi thủ tục v&agrave; to&agrave;n bộ c&aacute;c vấn đề ph&aacute;t sinh li&ecirc;n quan đến giao dịch cho thu&ecirc; xe giữa chủ xe v&agrave; kh&aacute;ch thu&ecirc; sẽ do hai b&ecirc;n tự thỏa thuận, k&iacute; hợp đồng v&agrave; chịu tr&aacute;ch nhiệm với nhau.</p>
-<p>Trong trường hợp c&oacute; xảy ra sự cố ngo&agrave;i &yacute; muốn như xe bị cầm cố, thế chấp, bị bắt khi được d&ugrave;ng để vận chuyển ma t&uacute;y, h&agrave;ng quốc cấm hoặc g&acirc;y ra tai nạn, OGIS sẽ cố gắng hỗ trợ tốt nhất c&aacute;c chủ xe trong khả năng của m&igrave;nh, giới hạn ở việc hướng dẫn chủ xe c&aacute;c thủ tục cần thiết để tr&igrave;nh b&aacute;o với cơ quan c&ocirc;ng an v&agrave; c&aacute;c cơ quan c&oacute; thẩm quyền, cung cấp c&aacute;c th&ocirc;ng tin nếu c&oacute; li&ecirc;n quan đến th&agrave;nh vi&ecirc;n thu&ecirc; xe hoặc c&aacute;c th&ocirc;ng tin kh&aacute;c nếu c&oacute; y&ecirc;u cầu từ cơ quan chức năng, v&agrave; tiến h&agrave;nh kh&oacute;a vĩnh viễn t&agrave;i khoản th&agrave;nh vi&ecirc;n vi phạm.</p>
-<p>Để bảo vệ tốt nhất t&agrave;i sản của m&igrave;nh v&agrave; giảm thiểu tối đa c&aacute;c rủi ro c&oacute; thể xảy ra, c&aacute;c chủ xe cần r&agrave;ng buộc chặt chẽ về mặt ph&aacute;p l&iacute; bằng việc giao kết bằng văn bản "Hợp đồng cho thu&ecirc; xe tự l&aacute;i", "Bi&ecirc;n bản b&agrave;n giao xe" (c&oacute; thể tham khảo sử dụng mẫu hợp đồng v&agrave; bi&ecirc;n bản b&agrave;n giao do OGIS đề xuất hoặc c&oacute; thể sử dụng mẫu ri&ecirc;ng của nh&agrave; xe), x&aacute;c minh đầy đủ th&ocirc;ng tin v&agrave; c&aacute;c giấy tờ c&aacute; nh&acirc;n của kh&aacute;ch thu&ecirc;, giữ lại t&agrave;i sản đặt cọc v&agrave; c&aacute;c giấy tờ cần thiết (v&agrave; tuyệt đối kh&ocirc;ng giao c&agrave; vẹt xe bản ch&iacute;nh cho kh&aacute;ch thu&ecirc;). C&aacute;c chủ xe cũng cần trang bị cho xe thiết bị định vị GPS để c&oacute; thể theo d&otilde;i v&agrave; kiểm tra vị tr&iacute; xe thường xuy&ecirc;n nhằm c&oacute; c&aacute;c phương &aacute;n xử l&iacute; kịp thời.</p>
-<p>Thời gian tới, nhằm bảo vệ một c&aacute;ch to&agrave;n diện nhất quyền lợi của c&aacute;c chủ xe cũng như kh&aacute;ch thu&ecirc;, OGIS đang x&uacute;c tiến l&agrave;m việc với c&aacute;c đối t&aacute;c bảo hiểm để triển khai c&aacute;c sản phẩm bảo hiểm đối với dịch vụ thu&ecirc; xe tự l&aacute;i theo ng&agrave;y, &aacute;p dụng cho tất cả c&aacute;c giao dịch cho thu&ecirc; được thực hiện th&ocirc;ng qua ứng dụng OGIS.</p>
-<p>OGIS hy vọng sẽ sớm ho&agrave;n thiện v&agrave; triển khai g&oacute;i giải ph&aacute;p n&agrave;y trong thời gian sớm nhất.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="canceltrip">3. Ch&iacute;nh s&aacute;ch hủy chuyến</h2>
-<h3 id="#rentercanceltrip"><strong>A. D&agrave;nh cho kh&aacute;ch thu&ecirc; xe</strong></h3>
-<p>Bạn l&agrave; kh&aacute;ch thu&ecirc; xe, sau khi đ&atilde; đặt cọc v&agrave; đặt xe th&agrave;nh c&ocirc;ng, bạn c&oacute; thể hủy chuyến đi đ&atilde; đặt bằng c&aacute;ch gửi &ldquo;Y&ecirc;u cầu hủy chuyến&rdquo; th&ocirc;ng qua trang web ogis.vn hoặc ứng dụng OGIS, v&agrave; lựa chọn l&yacute; do hủy chuyến.</p>
-<p>Nếu thật sự muốn hủy chuyến, bạn n&ecirc;n lưu &yacute; thực hiện việc n&agrave;y c&agrave;ng sớm c&agrave;ng tốt v&igrave; OGIS sẽ tiến h&agrave;nh ho&agrave;n trả số tiền đặt cọc cho bạn t&ugrave;y thuộc v&agrave;o thời điểm bạn gửi y&ecirc;u cầu hủy chuyến. Số tiền đặt cọc OGIS sẽ ho&agrave;n trả cho bạn được t&iacute;nh như sau</p>
-<table>
-<thead>
-<tr>
-<td>Thời điểm hủy chuyến</td>
-<td>Ph&iacute; hủy chuyến</td>
-<td>Số tiền cọc ho&agrave;n trả</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Trong v&ograve;ng 1 giờ sau khi đặt cọc</td>
-<td>0% Tiền cọc</td>
-<td>100% Tiền cọc</td>
-</tr>
-<tr>
-<td>&gt; 7 ng&agrave;y trước khởi h&agrave;nh</td>
-<td>30% Tiền cọc</td>
-<td>70% Tiền cọc</td>
-</tr>
-<tr>
-<td>&lt;= 7 ng&agrave;y trước khởi h&agrave;nh</td>
-<td>100% Tiền cọc</td>
-<td>0% Tiền cọc</td>
-</tr>
-<tr>
-<td colspan="3">*** Trường hợp ph&aacute;t sinh&nbsp;<span class="fontWeight-5">Ph&iacute; hủy chuyến</span>, OGIS sẽ trừ v&agrave;o tiền đặt cọc của Qu&yacute; kh&aacute;ch h&agrave;ng v&agrave; sẽ thanh to&aacute;n lại khoản tiền n&agrave;y cho Đối t&aacute;c chủ xe (v&agrave; ngược lại, trường hợp Đối t&aacute;c chủ xe hủy chuyến được đến ph&aacute;t sinh Ph&iacute; hủy chuyến, OGIS sẽ ho&agrave;n trả lại 100% tiền cọc v&agrave; tiền ph&iacute; hủy chuyến được đền b&ugrave; cho Qu&yacute; kh&aacute;ch trong 1 - 3 ng&agrave;y l&agrave;m việc).</td>
-</tr>
-</tbody>
-</table>
-<div class="space l">&nbsp;</div>
-<p>Những kh&aacute;ch thu&ecirc; xe thực hiện hủy chuyến nhiều lần sẽ bị tạm kh&oacute;a t&agrave;i khoản th&agrave;nh vi&ecirc;n tr&ecirc;n ứng dụng OGIS.</p>
-<h3 id="ownercanceltrip">B. D&agrave;nh cho Chủ xe</h3>
-<p>Nếu bạn l&agrave; chủ xe, trong trường hợp bạn muốn hủy chuyến sau khi kh&aacute;ch h&agrave;ng đ&atilde; đặt xe th&agrave;nh c&ocirc;ng, bạn c&oacute; thể thực hiện thao t&aacute;c hủy chuyến tr&ecirc;n ứng dụng OGIS.</p>
-<p>Nhằm gia tăng sự cam kết của chủ xe cũng như đảm bảo quyền lợi của kh&aacute;ch thu&ecirc;, trường hợp chủ xe hủy chuyến (v&igrave; l&iacute; do kh&ocirc;ng giao đ&uacute;ng xe / kh&ocirc;ng giao xe đ&uacute;ng thời gian), nếu như kh&ocirc;ng thỏa thuận được hoặc kh&ocirc;ng c&oacute; sự đồng &yacute; từ ph&iacute;a kh&aacute;ch thu&ecirc;, th&igrave; chủ xe phải bồi thường ph&iacute; hủy chuyến cho kh&aacute;ch thu&ecirc; số tiền bằng đ&uacute;ng số tiền m&agrave; kh&aacute;ch thu&ecirc; đ&atilde; đặt cọc th&ocirc;ng qua C&ocirc;ng ty Cổ phần OGIS Việt Nam.</p>
-<table>
-<thead>
-<tr>
-<td>Thời điểm hủy chuyến</td>
-<td>Ph&iacute; hủy chuyến</td>
-<td>Đ&aacute;nh gi&aacute; hệ thống</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Trong v&ograve;ng 1 giờ sau khi đặt cọc</td>
-<td>0% Tiền cọc</td>
-<td>3*</td>
-</tr>
-<tr>
-<td>&gt; 7 ng&agrave;y trước khởi h&agrave;nh</td>
-<td>30% Tiền cọc</td>
-<td>3*</td>
-</tr>
-<tr>
-<td>&lt;= 7 ng&agrave;y trước khởi h&agrave;nh</td>
-<td>100% Tiền cọc</td>
-<td>2* (hoặc 1* nếu &lt;6 tiếng)</td>
-</tr>
-<tr>
-<td colspan="3">*** Trường hợp ph&aacute;t sinh&nbsp;<span class="fontWeight-5">Ph&iacute; hủy chuyến</span>, OGIS sẽ trừ v&agrave;o t&agrave;i khoản của Qu&yacute; đối t&aacute;c v&agrave; sẽ thanh to&aacute;n lại khoản tiền n&agrave;y cho kh&aacute;ch h&agrave;ng (v&agrave; ngược lại, trường hợp kh&aacute;ch h&agrave;ng hủy chuyến dẫn đến ph&aacute;t sinh Ph&iacute; hủy chuyến, OGIS sẽ cộng tiền ph&iacute; v&agrave;o t&agrave;i khoản Qu&yacute; đối t&aacute;c).</td>
-</tr>
-</tbody>
-</table>
-<div class="space l">&nbsp;</div>
-<p>Ph&iacute; hủy chuyến sẽ được trừ v&agrave;o t&agrave;i khoản của bạn tr&ecirc;n OGIS. Trong trường hợp số dư t&agrave;i khoản của bạn nhỏ hơn số tiền ph&iacute; hủy chuyến, phần ch&ecirc;nh lệch sẽ được ghi &acirc;m v&agrave;o t&agrave;i khoản v&agrave; sẽ cấn trừ v&agrave;o thu nhập của bạn cho c&aacute;c chuyến xe tiếp theo.</p>
-<p>B&ecirc;n cạnh việc chịu ph&iacute;, c&aacute;c chủ xe thực hiện hủy chuyến nhiều lần sẽ bị tạm kh&oacute;a t&agrave;i khoản th&agrave;nh vi&ecirc;n tr&ecirc;n ứng dụng OGIS.</p>
-<p>Bộ phận CSKH của OGIS sẽ li&ecirc;n hệ với kh&aacute;ch thu&ecirc; xe th&ocirc;ng b&aacute;o về t&igrave;nh h&igrave;nh chuyến đi bị hủy, v&agrave; tiến h&agrave;nh ho&agrave;n trả lại 100% tiền cọc v&agrave; tiền ph&iacute; hủy chuyến được đền b&ugrave; (nếu c&oacute;) cho kh&aacute;ch thu&ecirc;.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="price">4. Ch&iacute;nh s&aacute;ch gi&aacute;</h2>
-<h3 id="renterprice">A. D&agrave;nh cho kh&aacute;ch thu&ecirc; xe</h3>
-<p>Tr&ecirc;n ứng dụng OGIS, mỗi d&ograve;ng xe sẽ được cho thu&ecirc; tại c&aacute;c mức gi&aacute; kh&aacute;c nhau t&ugrave;y thuộc v&agrave;o sự quyết định của c&aacute;c chủ xe v&agrave; được ni&ecirc;m yết c&ocirc;ng khai.</p>
-<p>Về cơ bản, cơ cấu gi&aacute; của một chuyến đi được t&iacute;nh bao gồm c&aacute;c th&agrave;nh phần:</p>
-<p>- Đơn gi&aacute; thu&ecirc;: L&agrave; gi&aacute; thu&ecirc; ni&ecirc;m yết bởi chủ xe m&agrave; bạn dễ d&agrave;ng nh&igrave;n thấy trong phần th&ocirc;ng tin xe. Gi&aacute; thu&ecirc; tr&ecirc;n OGIS được t&iacute;nh theo đơn vị nhỏ nhất l&agrave; ng&agrave;y. Chủ xe c&oacute; thể điều chỉnh gi&aacute; thu&ecirc; kh&aacute;c nhau cho từng ng&agrave;y, ch&iacute;nh v&igrave; vậy, chi ph&iacute; thu&ecirc; xe của bạn c&oacute; thể tăng hoặc giảm t&ugrave;y v&agrave;o thời điểm bạn thu&ecirc; xe. Th&ocirc;ng thường, gi&aacute; thu&ecirc; sẽ cao hơn trong dịp cuối tuần v&agrave; c&aacute;c ng&agrave;y lễ, tết.</p>
-<p>- Chiết khấu: một số chủ xe c&oacute; ch&iacute;nh s&aacute;ch chiết khấu cho c&aacute;c chuyến xe k&eacute;o d&agrave;i 1 tuần hoặc 1 th&aacute;ng (mức chiết khấu b&igrave;nh qu&acirc;n từ 5-20% t&ugrave;y v&agrave;o quyết định của chủ xe). V&igrave; thế, nếu bạn c&oacute; nhu cầu thu&ecirc; xe du lịch hay c&ocirc;ng t&aacute;c d&agrave;i ng&agrave;y, h&atilde;y ưu ti&ecirc;n lựa chọn c&aacute;c chủ xe n&agrave;y để c&oacute; được mức gi&aacute; tốt hơn.</p>
-<p>- Chi ph&iacute; vận chuyển: nếu bạn kh&ocirc;ng c&oacute; nhiều thời gian để đến trực tiếp địa diểm của chủ xe để nhận xe, bạn c&oacute; thể lựa chọn c&aacute;c chủ xe c&oacute; cung cấp th&ecirc;m dịch vụ giao xe tận nơi. Chi ph&iacute; giao nhận xe b&igrave;nh qu&acirc;n từ 5,000-15,000VND/km t&ugrave;y v&agrave;o quyết định của chủ xe được thể hiện tại phần th&ocirc;ng tin xe v&agrave; sẽ được cộng v&agrave;o chi ph&iacute; thu&ecirc; xe của bạn.</p>
-<p>- M&atilde; khuyến m&atilde;i: l&agrave; m&atilde; giảm gi&aacute; m&agrave; OGIS gửi tặng đến c&aacute;c th&agrave;nh vi&ecirc;n của m&igrave;nh cho trong c&aacute;c đợt khuyến m&atilde;i, hoặc d&agrave;nh cho c&aacute;c th&agrave;nh vi&ecirc;n th&acirc;n thiết giao dịch thường xuy&ecirc;n tr&ecirc;n ứng dụng OGIS. M&atilde; khuyến m&atilde;i n&agrave;y sẽ được trừ trực tiếp v&agrave;o chi ph&iacute; thu&ecirc; xe của bạn.</p>
-<p>Bảng t&oacute;m tắt:</p>
-<table>
-<tbody>
-<tr>
-<td>Ph&iacute; thu&ecirc; xe = Đơn gi&aacute; thu&ecirc; ng&agrave;y * Số ng&agrave;y (Gi&aacute; c&aacute;c ng&agrave;y c&oacute; thể thay đổi)</td>
-</tr>
-<tr>
-<td>Chiết khấu = % Chiết khấu * Ph&iacute; thu&ecirc; xe</td>
-</tr>
-<tr>
-<td>Ph&iacute; vận chuyển = Đơn gi&aacute; vận chuyển * Số km</td>
-</tr>
-<tr>
-<td>Khuyến m&atilde;i = % Khuyến m&atilde;i x (Ph&iacute; thu&ecirc; xe &ndash; Chiết khấu + Ph&iacute; vận chuyển)</td>
-</tr>
-<tr>
-<td>Tổng chi ph&iacute; chuyến đi = Ph&iacute; thu&ecirc; xe - Chiết khấu + Ph&iacute; vận chuyển + Ph&iacute; dịch vụ - Khuyến m&atilde;i.</td>
-</tr>
-</tbody>
-</table>
-<div class="space l">&nbsp;</div>
-<h3 id="ownerprice">B. D&agrave;nh cho Chủ xe</h3>
-<p>C&aacute;c chủ xe của OGIS được quyền thiết lập gi&aacute; thu&ecirc; xe h&agrave;ng ng&agrave;y cho th&aacute;ng hiện h&agrave;nh v&agrave; tối đa 3 th&aacute;ng kế tiếp. Bạn c&oacute; thể sử dụng gi&aacute; đề xuất của OGIS hoặc c&oacute; thể t&ugrave;y chỉnh gi&aacute; cho thu&ecirc; theo mong muốn của bạn.</p>
-<p>- Gi&aacute; đề xuất của OGIS: được định vị thấp hơn 10% so với gi&aacute; thu&ecirc; xe b&igrave;nh qu&acirc;n tr&ecirc;n thị trường. Mức gi&aacute; n&agrave;y được tiến h&agrave;nh khảo s&aacute;t h&agrave;ng th&aacute;ng bởi bộ phận ph&aacute;t triển thị trường của OGIS đối với từng d&ograve;ng xe kh&aacute;c nhau.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="payment">5. Ch&iacute;nh s&aacute;ch thanh to&aacute;n</h2>
-<p>Sau khi nhận được sự đồng &yacute; cho thu&ecirc; xe từ ph&iacute;a chủ xe, tại bước cuối c&ugrave;ng, bạn cần phải đặt cọc trước cho OGIS 30% tổng chi ph&iacute; chuyến đi. Bạn c&oacute; thể chọn lựa h&igrave;nh thức thanh to&aacute;n chuyển khoản qua ng&acirc;n h&agrave;ng trực tuyến hoặc sử dụng thẻ Visa.</p>
-<p>Phần c&ograve;n lại 70% bạn c&oacute; thể thanh to&aacute;n trực tiếp cho chủ xe ngay khi nhận được xe.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="transaction">6. Ch&iacute;nh s&aacute;ch thời gian giao nhận</h2>
-<p>Thời gian thu&ecirc; xe mặc định trong hệ thống được thiết lập từ 9h tối đến 8h tối ng&agrave;y kế tiếp. Tuy nhi&ecirc;n, kh&aacute;ch h&agrave;ng cũng c&oacute; thể t&ugrave;y chỉnh lựa chọn thời gian thu&ecirc; xe theo nhu cầu của m&igrave;nh, trong v&ograve;ng 24 tiếng sẽ được t&iacute;nh 1 ng&agrave;y.</p>
-<div class="space l">&nbsp;</div>
-<h2 id="quickcancel">7. Ch&iacute;nh s&aacute;ch kết th&uacute;c sớm chuyến đi</h2>
-<p>Trong trường hợp bạn muốn kết th&uacute;c sớm chuyến đi của m&igrave;nh khi vẫn chưa đến thời hạn trả xe, để c&oacute; thể được ho&agrave;n lại tiền cho c&aacute;c ng&agrave;y chưa sử dụng, bạn n&ecirc;n trao đổi trước với chủ xe v&agrave; cần phải nhận được sự đồng &yacute; từ ph&iacute;a chủ xe. Số tiền được ho&agrave;n lại sẽ do bạn v&agrave; chủ xe tự thỏa thuận với nhau. Lưu &yacute; rằng, bạn sẽ kh&ocirc;ng được ho&agrave;n lại số tiền bạn đ&atilde; đặt cọc cho OGIS.</p>
-<p><a href="https://ogis.vn/chinhsachhoatdong.html">Xem th&ecirc;m quy chế hoạt động, điều khoản s&agrave;n giao dịch OGIS tại đ&acirc;y</a></p>
-</div>
-
-<p></p>
-<p></p>
-
-        </div>
-    </article>
-
-
+<div class="sidebar">
+  <a href="thongtincongty.html">Thông tin công ty</a>
+  <a href="dieukhoanchinh.html">Chính sách & quy định</a>
+  <a href="chinhsachhoatdong.html">Quy chế hoạt động</a>
+  <a href="chinhsach.html">Chính sách bảo mật</a>
+  <a href="giaiquyetkhieunai.html">Chính sách khiếu nại</a>
 
 </div>
 
-<div id="mask_layer"></div>
 
-<div class="padding-footer web-app"></div>
-
-
-<!-- GLOBAL JS -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="http://alodoctor.com.vn:3393/front/js/jquery.min.js"></script>
-<script src="./quyche_files/jquery-ui.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="http://alodoctor.com.vn:3393/front/libs/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- PAGE JS -->
-
-
-</body></html>
+</body>
+</html>
