@@ -12,7 +12,11 @@
   max-width: 210px;
   padding: 12px 20px !important;
   border-color: #dddddd !important;
-  background: rgba(255, 255, 255, 0.5)
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 24px 8px;
+ 
+  margin-right: 10px;
+  border: 1px solid #dddddd;
 }
 
 .btn-store:focus, 
