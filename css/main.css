@@ -6,6 +6,32 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+.btn-store {
+  color: #111111;
+  min-width: 210px;
+  max-width: 210px;
+  padding: 12px 20px !important;
+  border-color: #dddddd !important;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.btn-store:focus, 
+.btn-store:hover {
+  color: #ffffff !important;
+  background-color: #168eea;
+  border-color: #168eea !important;
+}
+
+.btn-store .btn-label, 
+.btn-store .btn-caption {
+  display: block;
+  text-align: left;
+  line-height: 1;
+}
+
+.btn-store .btn-caption {
+  font-size: 24px;
+}
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #46dbf9;
